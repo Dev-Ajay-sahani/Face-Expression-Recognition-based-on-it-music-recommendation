@@ -1,7 +1,7 @@
 import cv2
-framewidth = 400
-frameheight = 100
-cap = cv2.VideoCapture(0)
+framewidth = 1000
+frameheight = 500
+cap = cv2.VideoCapture("resources/Untitled.mp4")
 # cap.set(3,frameheight)
 # cap.set(4,framewidth)
 while True:
@@ -10,4 +10,4 @@ while True:
    cv2.imshow("video", img)
    if cv2.waitKey(1) & 0xFF == ord("q"):
       break
-cv2.waitKey()
+cv2.waitKey(0)
